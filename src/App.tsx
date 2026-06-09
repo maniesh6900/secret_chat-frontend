@@ -112,7 +112,7 @@ function App() {
 
     ws.onopen = () => {
       setConnection("connected");
-      setMessages((prev) => [...prev, buildMessage("system", `Connected to ${WS_URL}`, true)]);
+      setMessages((prev) => [...prev,]);
       ws.send(
         JSON.stringify({
           type: "join",
